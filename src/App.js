@@ -7,7 +7,9 @@ export default class App extends Component {
     return (
       <div className="App font-mono">
         <Header/>
-        <Todo/>
+        <div className="container mx-auto max-w-screen-sm">
+          <Todo/>
+        </div>
       </div>
     )
   }

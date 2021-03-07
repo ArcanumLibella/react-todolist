@@ -31,9 +31,22 @@ export default class Todo extends Component {
           <h4 key={index}>
             {item.element}
           </h4>
-          <FontAwesomeIcon icon={faTimes} className="cursor-pointer"/>
+          <FontAwesomeIcon 
+            icon={faTimes} 
+            className="cursor-pointer"
+            onClick={() => this.removeItem(index)}/>
         </div>
       )
+    })
+  }
+
+  removeItem = (index) => {
+    const newListItems = this.state.items
+
+    newListItems.splice(index, 1)
+
+    this.setState({
+      items: newListItems
     })
   }
 
@@ -65,7 +78,7 @@ export default class Todo extends Component {
         </div>
 
         {this.renderTodo()}
-        
+
       </Fragment>
     )
   }

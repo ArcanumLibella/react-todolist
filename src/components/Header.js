@@ -6,7 +6,7 @@ export default class Header extends Component {
       <header>
         <nav className="sticky p-4 bg-yellow-500 text-2xl font-black text-center">
           <h1>
-            <a href="/">TODOLIST APP</a>
+            <a href="/">SHOPPING LIST APP</a>
           </h1>
         </nav>
       </header>

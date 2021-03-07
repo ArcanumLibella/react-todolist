@@ -1,9 +1,14 @@
-function App() {
-  return (
-    <div className="App">
-      TODOLIST
-    </div>
-  );
-}
+import React, { Component } from 'react'
+import Header from './components/Header'
+import Todo from './components/Todo'
 
-export default App;
+export default class App extends Component {
+  render() {
+    return (
+      <div className="App font-mono">
+        <Header/>
+        <Todo/>
+      </div>
+    )
+  }
+}
